@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>PetCare - Premier Pet Care & Grooming Services</title>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+    
+  <!-- Navbar -->
+  <nav class="bg-white/90 backdrop-blur-md fixed w-full z-20 top-0 start-0 border-b border-slate-200 shadow-sm">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="#home" class="flex items-center space-x-3 rtl:space-x-reverse text-indigo-600 text-2xl font-bold">
+          <i class="fa-solid fa-paw"></i>
+          <span class="self-center text-xl text-slate-900 font-bold whitespace-nowrap">PetCare</span>
+      </a>
+      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-slate-500 rounded-lg md:hidden hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500" aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-slate-200 rounded-lg bg-slate-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent">
+          <li>
+            <a href="#home" class="block py-2 px-3 text-indigo-600 font-semibold rounded md:p-0" aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="block py-2 px-3 text-slate-600 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-indigo-600 md:p-0">About</a>
+          </li>
+          <li>
+            <a href="#services" class="block py-2 px-3 text-slate-600 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-indigo-600 md:p-0">Services</a>
+          </li>
+          <li>
+            <a href="#pricing" class="block py-2 px-3 text-slate-600 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-indigo-600 md:p-0">Pricing</a>
+          </li>
+          <li>
+            <a href="#contact" class="block py-2 px-3 text-slate-600 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-indigo-600 md:p-0">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="text-slate-600 body-font pt-28 border-b border-slate-200 bg-white">
+    <div class="container mx-auto flex px-5 py-20 md:flex-row flex-col items-center">
+      <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <span class="text-indigo-600 font-bold tracking-wider text-sm uppercase mb-2">Loving Care For Your Pets</span>
+        <h1 class="title-font sm:text-5xl text-3xl mb-4 font-extrabold text-slate-900 leading-tight">
+          Giving Your Best Friends <br class="hidden lg:inline-block">The Care They Deserve
+        </h1>
+        <p class="mb-8 leading-relaxed text-slate-600">
+          Professional grooming, overnight boarding, obedience training, and veterinary support designed to keep your pets healthy, active, and happy.
+        </p>
+        <div class="flex justify-center gap-4">
+          <a href="#services" class="inline-flex text-white bg-indigo-600 border-0 py-3 px-8 focus:outline-none hover:bg-indigo-700 rounded-xl font-semibold shadow-md shadow-indigo-200 text-lg transition-all">Explore Services</a>
+          <a href="#about" class="inline-flex text-slate-700 bg-slate-100 border border-slate-300 py-3 px-8 focus:outline-none hover:bg-slate-200 rounded-xl font-semibold text-lg transition-all">Learn More</a>
+        </div>
+      </div>
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <div class="w-full h-[420px] rounded-3xl overflow-hidden relative shadow-xl border border-slate-200">
+          <img class="object-cover object-center w-full h-full" alt="Cute Puppy" src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=800">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="text-slate-600 body-font border-b border-slate-200 bg-slate-50">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-16">
+        <h1 class="sm:text-4xl text-3xl font-extrabold title-font mb-4 text-slate-900">About Our Dedicated Pet Center</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-slate-600">
+          We provide high-quality grooming, organic spa treatments, medical assistance, and daycare for dogs, cats, and small domestic animals under experienced veterinary care.
+        </p>
+      </div>
+      <div class="flex flex-wrap -m-4 text-center">
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border border-slate-200 bg-white px-4 py-8 rounded-2xl shadow-sm hover:shadow-md transition-all">
+            <i class="fa-solid fa-shield-dog text-indigo-600 text-4xl mb-3 inline-block"></i>
+            <h2 class="title-font font-extrabold text-3xl text-slate-900">2.7K+</h2>
+            <p class="leading-relaxed text-slate-500">Pets Groomed</p>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border border-slate-200 bg-white px-4 py-8 rounded-2xl shadow-sm hover:shadow-md transition-all">
+            <i class="fa-solid fa-users text-indigo-600 text-4xl mb-3 inline-block"></i>
+            <h2 class="title-font font-extrabold text-3xl text-slate-900">1.3K+</h2>
+            <p class="leading-relaxed text-slate-500">Happy Owners</p>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border border-slate-200 bg-white px-4 py-8 rounded-2xl shadow-sm hover:shadow-md transition-all">
+            <i class="fa-solid fa-user-doctor text-indigo-600 text-4xl mb-3 inline-block"></i>
+            <h2 class="title-font font-extrabold text-3xl text-slate-900">15+</h2>
+            <p class="leading-relaxed text-slate-500">Certified Vets</p>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border border-slate-200 bg-white px-4 py-8 rounded-2xl shadow-sm hover:shadow-md transition-all">
+            <i class="fa-solid fa-award text-indigo-600 text-4xl mb-3 inline-block"></i>
+            <h2 class="title-font font-extrabold text-3xl text-slate-900">46+</h2>
+            <p class="leading-relaxed text-slate-500">Care Awards</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Section (With Real Pet Images) -->
+  <section id="services" class="text-slate-600 body-font border-b border-slate-200 bg-white">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-16">
+        <h1 class="sm:text-4xl text-3xl font-extrabold title-font mb-4 text-slate-900">Our Premier Services</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-slate-600 text-base">Complete care solutions designed specifically to meet your pet's physical and wellness needs.</p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        
+        <!-- Service 1: Grooming -->
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition-all h-[280px] group">
+            <img alt="Pet Grooming" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="./dog.jpg">
+            <div class="px-6 py-8 relative z-10 w-full bg-slate-900/80 backdrop-blur-xs flex flex-col justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+              <h2 class="tracking-widest text-xs title-font font-bold text-indigo-400 mb-1 uppercase">HYGIENE & BEAUTY</h2>
+              <h1 class="title-font text-xl font-bold text-white mb-2">Pet Grooming</h1>
+              <p class="leading-relaxed text-slate-200 text-sm">Full bath, hair trim, nail filing, and organic coat treatment.</p>
+            </div>
+            <div class="absolute bottom-4 left-4 z-0 bg-white/90 backdrop-blur-md px-4 py-2 rounded-xl border border-slate-200 shadow-md group-hover:opacity-0 transition-opacity">
+              <h3 class="font-bold text-slate-900 text-sm">Pet Grooming</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2: Boarding -->
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition-all h-[280px] group">
+            <img alt="Pet Boarding" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="./new 2nd.webp">
+            <div class="px-6 py-8 relative z-10 w-full bg-slate-900/80 backdrop-blur-xs flex flex-col justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+              <h2 class="tracking-widest text-xs title-font font-bold text-indigo-400 mb-1 uppercase">ACCOMMODATION</h2>
+              <h1 class="title-font text-xl font-bold text-white mb-2">Overnight Boarding</h1>
+              <p class="leading-relaxed text-slate-200 text-sm">Climate-controlled private suites with 24/7 monitor supervision.</p>
+            </div>
+            <div class="absolute bottom-4 left-4 z-0 bg-white/90 backdrop-blur-md px-4 py-2 rounded-xl border border-slate-200 shadow-md group-hover:opacity-0 transition-opacity">
+              <h3 class="font-bold text-slate-900 text-sm">Overnight Boarding</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3: Vet Checkup -->
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition-all h-[280px] group">
+            <img alt="Veterinary Checkup" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="./new 3rd.png">
+            <div class="px-6 py-8 relative z-10 w-full bg-slate-900/80 backdrop-blur-xs flex flex-col justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+              <h2 class="tracking-widest text-xs title-font font-bold text-indigo-400 mb-1 uppercase">HEALTHCARE</h2>
+              <h1 class="title-font text-xl font-bold text-white mb-2">Veterinary Checkup</h1>
+              <p class="leading-relaxed text-slate-200 text-sm">Regular health exams, vaccinations, and nutrition advice.</p>
+            </div>
+            <div class="absolute bottom-4 left-4 z-0 bg-white/90 backdrop-blur-md px-4 py-2 rounded-xl border border-slate-200 shadow-md group-hover:opacity-0 transition-opacity">
+              <h3 class="font-bold text-slate-900 text-sm">Veterinary Checkup</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 4: Daycare -->
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition-all h-[280px] group">
+            <img alt="Pet Daycare" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="./4th dog.avif">
+            <div class="px-6 py-8 relative z-10 w-full bg-slate-900/80 backdrop-blur-xs flex flex-col justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+              <h2 class="tracking-widest text-xs title-font font-bold text-indigo-400 mb-1 uppercase">FUN & PLAY</h2>
+              <h1 class="title-font text-xl font-bold text-white mb-2">Pet Daycare</h1>
+              <p class="leading-relaxed text-slate-200 text-sm">Supervised play areas with social activities and toys.</p>
+            </div>
+            <div class="absolute bottom-4 left-4 z-0 bg-white/90 backdrop-blur-md px-4 py-2 rounded-xl border border-slate-200 shadow-md group-hover:opacity-0 transition-opacity">
+              <h3 class="font-bold text-slate-900 text-sm">Pet Daycare</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 5: Obedience Training -->
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition-all h-[280px] group">
+            <img alt="Obedience Training" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="./5th img.avif">
+            <div class="px-6 py-8 relative z-10 w-full bg-slate-900/80 backdrop-blur-xs flex flex-col justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+              <h2 class="tracking-widest text-xs title-font font-bold text-indigo-400 mb-1 uppercase">BEHAVIOR</h2>
+              <h1 class="title-font text-xl font-bold text-white mb-2">Obedience Training</h1>
+              <p class="leading-relaxed text-slate-200 text-sm">Positive reinforcement programs for puppies and adult dogs.</p>
+            </div>
+            <div class="absolute bottom-4 left-4 z-0 bg-white/90 backdrop-blur-md px-4 py-2 rounded-xl border border-slate-200 shadow-md group-hover:opacity-0 transition-opacity">
+              <h3 class="font-bold text-slate-900 text-sm">Obedience Training</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 6: Pet Taxi -->
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition-all h-[280px] group">
+            <img alt="Pet Taxi Service" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="./new 6th.jpg">
+            <div class="px-6 py-8 relative z-10 w-full bg-slate-900/80 backdrop-blur-xs flex flex-col justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+              <h2 class="tracking-widest text-xs title-font font-bold text-indigo-400 mb-1 uppercase">LOGISTICS</h2>
+              <h1 class="title-font text-xl font-bold text-white mb-2">Pet Taxi Service</h1>
+              <p class="leading-relaxed text-slate-200 text-sm">Safe pickup and drop-off service for grooming and vet visits.</p>
+            </div>
+            <div class="absolute bottom-4 left-4 z-0 bg-white/90 backdrop-blur-md px-4 py-2 rounded-xl border border-slate-200 shadow-md group-hover:opacity-0 transition-opacity">
+              <h3 class="font-bold text-slate-900 text-sm">Pet Taxi Service</h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="text-slate-600 body-font overflow-hidden border-b border-slate-200 bg-slate-50">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-16">
+        <h1 class="sm:text-4xl text-3xl font-extrabold title-font mb-2 text-slate-900">Transparent Pricing Plans</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-slate-500">Choose the ideal care package tailored for your pet's needs.</p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        
+        <!-- Start Package -->
+        <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+          <div class="h-full p-6 rounded-2xl border border-slate-200 bg-white flex flex-col relative overflow-hidden shadow-sm hover:shadow-md transition-all">
+            <h2 class="text-xs tracking-widest title-font mb-1 font-bold text-indigo-600 uppercase">START</h2>
+            <h1 class="text-4xl text-slate-900 pb-4 mb-4 border-b border-slate-100 font-extrabold">$19 <span class="text-sm font-normal text-slate-500">/ session</span></h1>
+            <p class="flex items-center text-slate-600 mb-2 text-sm">
+              <i class="fa-solid fa-check text-indigo-600 mr-2"></i> Basic Bath & Drying
+            </p>
+            <p class="flex items-center text-slate-600 mb-2 text-sm">
+              <i class="fa-solid fa-check text-indigo-600 mr-2"></i> Nail Trimming
+            </p>
+            <p class="flex items-center text-slate-600 mb-6 text-sm">
+              <i class="fa-solid fa-check text-indigo-600 mr-2"></i> Ear Cleaning
+            </p>
+            <button class="flex items-center mt-auto text-slate-700 bg-slate-100 hover:bg-slate-200 border-0 py-2.5 px-4 w-full focus:outline-none rounded-xl font-semibold transition-all">Select Plan
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </button>
+            <p class="text-xs text-slate-400 mt-3">Ideal for quick hygienic maintenance.</p>
+          </div>
+        </div>
+
+        <!-- Pro Package -->
+        <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+          <div class="h-full p-6 rounded-2xl border-2 border-indigo-600 bg-white flex flex-col relative overflow-hidden shadow-xl shadow-indigo-100">
+            <span class="bg-indigo-600 text-white px-3 py-1 tracking-widest text-[10px] font-bold absolute right-0 top-0 rounded-bl uppercase">POPULAR</span>
+            <h2 class="text-xs tracking-widest title-font mb-1 font-bold text-indigo-600 uppercase">PRO SPA</h2>
+            <h1 class="text-4xl text-slate-900 pb-4 mb-4 border-b border-slate-100 font-extrabold">$38 <span class="text-sm font-normal text-slate-500">/ session</span></h1>
+            <p class="flex items-center text-slate-600 mb-2 text-sm">
+              <i class="fa-solid fa-check text-indigo-600 mr-2"></i> Luxury Organic Bath
+            </p>
+            <p class="flex items-center text-slate-600 mb-2 text-sm">
+              <i class="fa-solid fa-check text-indigo-600 mr-2"></i> Haircut & Coat Styling
+            </p>
+            <p class="flex items-center text-slate-600 mb-2 text-sm">
+              <i class="fa-solid fa-check text-indigo-600 mr-2"></i> Teeth & Paw Treatment
+            </p>
+            <p class="flex items-center text-slate-600 mb-6 text-sm">
+              <i class="fa-solid fa-check text-indigo-600 mr-2"></i> Routine Health Check
+            </p>
+            <button class="flex items-center mt-auto text-white bg-indigo-600 hover:bg-indigo-700 border-0 py-2.5 px-4 w-full focus:outline-none rounded-xl font-semibold shadow-md shadow-indigo-200 transition-all">Select Plan
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </button>
+            <p class="text-xs text-slate-400 mt-3">Most recommended for routine care.</p>
+          </div>
+        </div>
+
+        <!-- Boarding Package -->
+        <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+          <div class="h-full p-6 rounded-2xl border border-slate-200 bg-white flex flex-col relative overflow-hidden shadow-sm hover:shadow-md transition-all">
+            <h2 class="text-xs tracking-widest title-font mb-1 font-bold text-indigo-600 uppercase">BOARDING</h2>
+            <h1 class="text-4xl text-slate-900 pb-4 mb-4 border-b border-slate-100 font-extrabold">$56 <span class="text-sm font-normal text-slate-500">/ night</span></h1>
+            <p class="flex items-center text-slate-600 mb-2 text-sm">
+              <i class="fa-solid fa-check text-indigo-600 mr-2"></i> Private Suite Lodging
+            </p>
+            <p class="flex items-center text-slate-600 mb-2 text-sm">
+              <i class="fa-solid fa-check text-indigo-600 mr-2"></i> 3 Nutritionist Meals
+            </p>
+            <p class="flex items-center text-slate-600 mb-2 text-sm">
+              <i class="fa-solid fa-check text-indigo-600 mr-2"></i> Outdoor Play Sessions
+            </p>
+            <p class="flex items-center text-slate-600 mb-6 text-sm">
+              <i class="fa-solid fa-check text-indigo-600 mr-2"></i> Live Video Updates
+            </p>
+            <button class="flex items-center mt-auto text-slate-700 bg-slate-100 hover:bg-slate-200 border-0 py-2.5 px-4 w-full focus:outline-none rounded-xl font-semibold transition-all">Select Plan
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </button>
+            <p class="text-xs text-slate-400 mt-3">Safe overnight stays while traveling.</p>
+          </div>
+        </div>
+
+        <!-- Special Package -->
+        <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+          <div class="h-full p-6 rounded-2xl border border-slate-200 bg-white flex flex-col relative overflow-hidden shadow-sm hover:shadow-md transition-all">
+            <h2 class="text-xs tracking-widest title-font mb-1 font-bold text-indigo-600 uppercase">SPECIAL</h2>
+            <h1 class="text-4xl text-slate-900 pb-4 mb-4 border-b border-slate-100 font-extrabold">$72 <span class="text-sm font-normal text-slate-500">/ mo</span></h1>
+            <p class="flex items-center text-slate-600 mb-2 text-sm">
+              <i class="fa-solid fa-check text-indigo-600 mr-2"></i> Unlimited Daycare Access
+            </p>
+            <p class="flex items-center text-slate-600 mb-2 text-sm">
+              <i class="fa-solid fa-check text-indigo-600 mr-2"></i> 2 Full Spa Groomings
+            </p>
+            <p class="flex items-center text-slate-600 mb-2 text-sm">
+              <i class="fa-solid fa-check text-indigo-600 mr-2"></i> Priority Vet Consults
+            </p>
+            <p class="flex items-center text-slate-600 mb-6 text-sm">
+              <i class="fa-solid fa-check text-indigo-600 mr-2"></i> Free Pet Taxi Pickup
+            </p>
+            <button class="flex items-center mt-auto text-slate-700 bg-slate-100 hover:bg-slate-200 border-0 py-2.5 px-4 w-full focus:outline-none rounded-xl font-semibold transition-all">Select Plan
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </button>
+            <p class="text-xs text-slate-400 mt-3">Complete VIP monthly package.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="text-slate-600 body-font relative border-b border-slate-200 bg-white">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-12">
+        <h1 class="sm:text-4xl text-3xl font-extrabold title-font mb-4 text-slate-900">Contact Us</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-slate-600">Book a grooming session or reach out to our team with any pet care inquiries.</p>
+      </div>
+      <div class="lg:w-1/2 md:w-2/3 mx-auto">
+        <form class="flex flex-wrap -m-2 bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm" onsubmit="event.preventDefault();">
+          <div class="p-2 w-1/2">
+            <div class="relative">
+              <label for="name" class="leading-7 text-sm text-slate-700 font-medium">Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" class="w-full bg-white rounded-xl border border-slate-300 focus:border-indigo-600 focus:ring-2 focus:ring-indigo-100 text-base outline-none text-slate-800 py-1.5 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+          </div>
+          <div class="p-2 w-1/2">
+            <div class="relative">
+              <label for="email" class="leading-7 text-sm text-slate-700 font-medium">Email</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" class="w-full bg-white rounded-xl border border-slate-300 focus:border-indigo-600 focus:ring-2 focus:ring-indigo-100 text-base outline-none text-slate-800 py-1.5 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+          </div>
+          <div class="p-2 w-full">
+            <div class="relative">
+              <label for="message" class="leading-7 text-sm text-slate-700 font-medium">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us about your pet's needs..." class="w-full bg-white rounded-xl border border-slate-300 focus:border-indigo-600 focus:ring-2 focus:ring-indigo-100 h-32 text-base outline-none text-slate-800 py-2 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+            </div>
+          </div>
+          <div class="p-2 w-full">
+            <button type="submit" class="flex mx-auto text-white bg-indigo-600 border-0 py-3 px-8 focus:outline-none hover:bg-indigo-700 rounded-xl text-lg font-semibold shadow-md shadow-indigo-200 transition-all">Send Message</button>
+          </div>
+          <div class="p-2 w-full pt-6 mt-6 border-t border-slate-200 text-center">
+            <a class="text-indigo-600 font-semibold">support@petcare.com</a>
+            <p class="leading-normal my-3 text-slate-500 text-sm">Main Boulevard, Pet Care Center,
+              <br>Karachi, Pakistan
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="text-slate-600 bg-slate-100 body-font">
+    <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+        <a href="#home" class="flex title-font font-bold items-center md:justify-start justify-center text-slate-900 text-2xl">
+          <i class="fa-solid fa-paw text-indigo-600 text-3xl"></i>
+          <span class="ml-3 text-xl">PetCare</span>
+        </a>
+        <p class="mt-2 text-sm text-slate-500">Providing loving care, professional grooming, and health support for your best friends.</p>
+      </div>
+      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-bold text-slate-900 tracking-widest text-sm mb-3 uppercase">SERVICES</h2>
+          <nav class="list-none mb-10 space-y-2 text-sm">
+            <li><a href="#services" class="hover:text-indigo-600 transition-colors">Grooming & Spa</a></li>
+            <li><a href="#services" class="hover:text-indigo-600 transition-colors">Pet Boarding</a></li>
+            <li><a href="#services" class="hover:text-indigo-600 transition-colors">Vet Checkup</a></li>
+            <li><a href="#services" class="hover:text-indigo-600 transition-colors">Daycare Center</a></li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-bold text-slate-900 tracking-widest text-sm mb-3 uppercase">QUICK LINKS</h2>
+          <nav class="list-none mb-10 space-y-2 text-sm">
+            <li><a href="#home" class="hover:text-indigo-600 transition-colors">Home</a></li>
+            <li><a href="#about" class="hover:text-indigo-600 transition-colors">About Us</a></li>
+            <li><a href="#pricing" class="hover:text-indigo-600 transition-colors">Pricing Plans</a></li>
+            <li><a href="#contact" class="hover:text-indigo-600 transition-colors">Contact Us</a></li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-bold text-slate-900 tracking-widest text-sm mb-3 uppercase">PET CARE</h2>
+          <nav class="list-none mb-10 space-y-2 text-sm">
+            <li><a href="#services" class="hover:text-indigo-600 transition-colors">Dog Training</a></li>
+            <li><a href="#services" class="hover:text-indigo-600 transition-colors">Cat Wellness</a></li>
+            <li><a href="#services" class="hover:text-indigo-600 transition-colors">Pet Taxi</a></li>
+            <li><a href="#pricing" class="hover:text-indigo-600 transition-colors">Special Offers</a></li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-bold text-slate-900 tracking-widest text-sm mb-3 uppercase">SUPPORT</h2>
+          <nav class="list-none mb-10 space-y-2 text-sm">
+            <li><a href="#contact" class="hover:text-indigo-600 transition-colors">Help Center</a></li>
+            <li><a href="#contact" class="hover:text-indigo-600 transition-colors">Book Visit</a></li>
+            <li><a href="#contact" class="hover:text-indigo-600 transition-colors">FAQs</a></li>
+            <li><a href="#contact" class="hover:text-indigo-600 transition-colors">Emergency Vet</a></li>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="bg-slate-200/60 border-t border-slate-200">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row items-center justify-between">
+        <p class="text-slate-500 text-sm text-center sm:text-left">© 2026 PetCare — All rights reserved.</p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start gap-4">
+          <a class="text-slate-500 hover:text-indigo-600 transition-colors cursor-pointer">
+            <i class="fa-brands fa-facebook-f text-lg"></i>
+          </a>
+          <a class="text-slate-500 hover:text-indigo-600 transition-colors cursor-pointer">
+            <i class="fa-brands fa-twitter text-lg"></i>
+          </a>
+          <a class="text-slate-500 hover:text-indigo-600 transition-colors cursor-pointer">
+            <i class="fa-brands fa-instagram text-lg"></i>
+          </a>
+          <a class="text-slate-500 hover:text-indigo-600 transition-colors cursor-pointer">
+            <i class="fa-brands fa-linkedin-in text-lg"></i>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+</body>
+</html>
